@@ -22,7 +22,7 @@ To ensure you can run jupyter notebook which runs on "Local" environment, make s
 
 1. Use OS based on GNU/Linux
 2. Use Python 3.8
-3. Install required library
+3. Install required application & library
 
 ```
 sudo apt update
@@ -39,19 +39,30 @@ python3.8 -m pip install pandas matplotlib seaborn nltk pyenchant jellyfish scik
 
 > Jupyter notebook on `extra_notebook` directory isn't used on the competition
 
-| Filename           | Kaggle link                                                                               | Environment | Description                                                               |
-| ------------------ | ----------------------------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------- |
-| 01a_ocr.ipynb      | https://www.kaggle.com/ilosvigil/shopee-competition-2-ocr?scriptVersionId=37547674        | Kaggle GPU  | Perform OCR on Train Images (0 - 26346)                                   |
-| 01b_ocr.ipynb      | https://www.kaggle.com/ilosvigil/shopee-competition-2-ocr?scriptVersionId=37573844        | Kaggle GPU  | Perform OCR on Train Images (26347 - 52691)                               |
-| 01c_ocr.ipynb      | https://www.kaggle.com/ilosvigil/shopee-competition-2-ocr?scriptVersionId=37601445        | Kaggle GPU  | Perform OCR on Train Images (52695 - 79041)                               |
-| 01d_ocr.ipynb      | https://www.kaggle.com/williammulianto/shopee-2-ocr-train-41b3f4?scriptVersionId=37614455 | Kaggle GPU  | Perform OCR on Train Images (79042 - 105390)                              |
-| 01e_ocr.ipynb      | https://www.kaggle.com/ilosvigil/shopee-competition-2-ocr?scriptVersionId=37631409        | Kaggle GPU  | Perform OCR on Test Images                                                |
-| 02a_clean.ipynb    | -                                                                                         | Local       | Clean OCR text from train images                                          |
-| 02b_clean.ipynb    | -                                                                                         | Local       | Clean OCR text from text images                                           |
-| 03_tfidf.ipynb     | -                                                                                         | Local       | Create TF-IDF representation of cleaned text                              |
-| 04a_tfrecord.ipynb | https://www.kaggle.com/ilosvigil/scl2020-2-4a-create-tfrecord-1-3                         | Kaggle CPU  | Create TFRecord file from train images & parquet dataset (0 - 52694)      |
-| 04b_tfrecord.ipynb | https://www.kaggle.com/ilosvigil/scl2020-2-4c-create-tfrecord-2-3                         | Kaggle CPU  | Create TFRecord file from train images & parquet dataset (52695 - 105390) |
-| 04c_tfrecord.ipynb | https://www.kaggle.com/ilosvigil/scl2020-2-4b-create-tfrecord-3-3                         | Kaggle CPU  | Create TFRecord file from test images & parquet dataset                   |
+| Filename           | Kaggle link                                                                                | Environment | Description                                                               |
+| ------------------ | ------------------------------------------------------------------------------------------ | ----------- | ------------------------------------------------------------------------- |
+| 01a_ocr.ipynb      | https://www.kaggle.com/ilosvigil/shopee-competition-2-ocr?scriptVersionId=37547674         | Kaggle GPU  | Perform OCR on Train Images (0 - 26346)                                   |
+| 01b_ocr.ipynb      | https://www.kaggle.com/ilosvigil/shopee-competition-2-ocr?scriptVersionId=37573844         | Kaggle GPU  | Perform OCR on Train Images (26347 - 52691)                               |
+| 01c_ocr.ipynb      | https://www.kaggle.com/ilosvigil/shopee-competition-2-ocr?scriptVersionId=37601445         | Kaggle GPU  | Perform OCR on Train Images (52695 - 79041)                               |
+| 01d_ocr.ipynb      | https://www.kaggle.com/williammulianto/shopee-2-ocr-train-41b3f4?scriptVersionId=37614455  | Kaggle GPU  | Perform OCR on Train Images (79042 - 105390)                              |
+| 01e_ocr.ipynb      | https://www.kaggle.com/ilosvigil/shopee-competition-2-ocr?scriptVersionId=37631409         | Kaggle GPU  | Perform OCR on Test Images                                                |
+| 02a_clean.ipynb    | -                                                                                          | Local       | Clean OCR text from train images                                          |
+| 02b_clean.ipynb    | -                                                                                          | Local       | Clean OCR text from text images                                           |
+| 03_tfidf.ipynb     | -                                                                                          | Local       | Create TF-IDF representation of cleaned text                              |
+| 04a_tfrecord.ipynb | https://www.kaggle.com/ilosvigil/scl2020-2-4a-create-tfrecord-1-3?scriptVersionId=37853684 | Kaggle CPU  | Create TFRecord file from train images & parquet dataset (0 - 52694)      |
+| 04b_tfrecord.ipynb | https://www.kaggle.com/ilosvigil/scl2020-2-4b-create-tfrecord-2-3?scriptVersionId=37853702 | Kaggle CPU  | Create TFRecord file from train images & parquet dataset (52695 - 105390) |
+| 04c_tfrecord.ipynb | https://www.kaggle.com/ilosvigil/scl2020-2-4c-create-tfrecord-3-3?scriptVersionId=37853715 | Kaggle CPU  | Create TFRecord file from test images & parquet dataset                   |
+| 05a_model.ipynb    | https://www.kaggle.com/ilosvigil/scl2020-2-5-model?scriptVersionId=37953296                | Kaggle TPU  | Create Multimodal Model. Some comment might not match code.               |
+| 05b_model.ipynb    | https://www.kaggle.com/ilosvigil/shopee-competition-2?scriptVersionId=38054791             | Kaggle TPU  | Create Multimodal Model                                                   |
+
+## LB/Leaderboard Score
+
+| Notebook filename | Submission filename    | Used for Final Score | Public LB   | Private LB |
+| ----------------- | ---------------------- | -------------------- | ----------- | ---------- |
+| 05a_model.ipynb   | submission.csv         | Yes                  | **0.85325** | ?          |
+| 05b_model.ipynb   | submission.csv         | No                   | 0.84085     | ?          |
+| 05b_model.ipynb   | submission_tta_0.csv   | Yes                  | 0.84323     | ?          |
+| 05b_model.ipynb   | submission_tta_all.csv | No                   | 0.84085     | ?          |
 
 ## Reproducibility Guide
 
@@ -71,3 +82,4 @@ python3.8 -m pip install pandas matplotlib seaborn nltk pyenchant jellyfish scik
 3. Run `02a_clean.ipynb` & `02b_clean.ipynb`
 4. Run `03_tfidf.ipynb`
 5. Run `04a_tfrecord.ipynb`, `04b_tfrecord.ipynb` & `04c_tfrecord.ipynb`
+6. Run `05a_model.ipynb` or `05b_model.ipynb`
