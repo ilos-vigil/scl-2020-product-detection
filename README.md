@@ -1,6 +1,11 @@
 # Shopee Code League 2020 - Product Detection 
 
-This is source code for 3rd Place (Public Leaderboard) with score 0.85325 of [[Student] Shopee Code League 2020 - Product Detection](https://www.kaggle.com/c/shopee-product-detection-student). Open [Overview Archive](https://archive.is/EqTMR) and [Leaderboard Archive](https://archive.is/fHKAz) if Kaggle is down or the links become invalid.
+This is source code for 3rd Place (Public Leaderboard) with score 0.85325 of [[Student] Shopee Code League 2020 - Product Detection](https://www.kaggle.com/c/shopee-product-detection-student). Open [Overview Archive](https://archive.is/EqTMR) and [Leaderboard Archive](https://archive.is/fHKAz) if Kaggle is down or the link is invalid.
+
+## Warning
+
+* There's no reproducibility guarantee for notebook which uses GPU and TPU
+* Although we use The Unlicense, dataset and generated dataset falls under Shopee Terms and Conditions which can be seen on [Google Docs](https://docs.google.com/document/d/17mWGXdK8kW9wMxiAPWrn_1MnDtCRKxRdiSoz1u5RRDw), [Google Docs (2)](https://docs.google.com/document/d/13-ZxPKqHL0o5CG8YJSHjNe_cJUQnxjctCBRfu_S3sVc/) or [Internet Archive](https://web.archive.org/web/20200704093857/https://docs.google.com/document/d/17mWGXdK8kW9wMxiAPWrn_1MnDtCRKxRdiSoz1u5RRDw/edit)
 
 ## Environment List
 
@@ -13,9 +18,26 @@ This is source code for 3rd Place (Public Leaderboard) with score 0.85325 of [[S
 | Kaggle TPU       | 2C/4T CPU, 16GB RAM, TPU v3-8          |
 | Local            | 6C/12T CPU, 16GB RAM, 16GB Swapfile    |
 
+To ensure you can run jupyter notebook which runs on "Local" environment, make sure that :
+
+1. Use OS based on GNU/Linux
+2. Use Python 3.8
+3. Install required library
+
+```
+sudo apt update
+sudo apt install enchant libenchant hunspell libhunspell hunspell-en-us hunspell-id
+```
+
+4. Install required Python library
+
+```
+python3.8 -m pip install pandas matplotlib seaborn nltk pyenchant jellyfish scikit-learn scipy numpy pattern notebook
+```
+
 ## Notebook description
 
-> Jupyter Notebook on `extra_notebook` directory isn't used on the competition
+> Jupyter notebook on `extra_notebook` directory isn't used on the competition
 
 | Filename           | Kaggle link                                                                               | Environment | Description                                                               |
 | ------------------ | ----------------------------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------- |
@@ -33,7 +55,7 @@ This is source code for 3rd Place (Public Leaderboard) with score 0.85325 of [[S
 
 ## Reproducibility Guide
 
-> This guide assume you move necessary files to correct directory path
+> This guide assume you have necessary files (full dataset provided by Shopee) and move it to correct directory path
 
 1. Run `01a_ocr.ipynb`, `01b_ocr.ipynb`, `01c_ocr.ipynb`, `01d_ocr.ipynb` & `01e_ocr.ipynb` on Kaggle Notebook
 2. Rename output filename from each notebook
