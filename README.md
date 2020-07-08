@@ -2,8 +2,9 @@
 
 This is source code for 4th place (Private LB: 0.84923) of [[Student] Shopee Code League 2020 - Product Detection](https://www.kaggle.com/c/shopee-product-detection-student). Check [Overview Archive](https://archive.is/EqTMR) and [Leaderboard Archive](https://archive.is/wrXZa) if Kaggle is down or the link is invalid.
 
-## Warning
+## Disclaimer
 
+* This is work of Cocoa team, we **DO NOT** represent any organization.
 * There's no reproducibility guarantee for notebook which uses GPU and TPU
 * Although we use License "The Unlicense", dataset and generated dataset falls under Shopee Terms and Conditions which can be seen on [Google Docs](https://docs.google.com/document/d/17mWGXdK8kW9wMxiAPWrn_1MnDtCRKxRdiSoz1u5RRDw), [Google Docs (2)](https://docs.google.com/document/d/13-ZxPKqHL0o5CG8YJSHjNe_cJUQnxjctCBRfu_S3sVc/) or [Internet Archive](https://web.archive.org/web/20200704093857/https://docs.google.com/document/d/17mWGXdK8kW9wMxiAPWrn_1MnDtCRKxRdiSoz1u5RRDw/edit)
 
