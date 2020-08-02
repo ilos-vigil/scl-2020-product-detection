@@ -1,6 +1,6 @@
 # Shopee Code League 2020 - Product Detection 
 
-This is source code for 4th place (Private LB: 0.84923) of [[Student] Shopee Code League 2020 - Product Detection](https://www.kaggle.com/c/shopee-product-detection-student). Check [Overview Archive](https://archive.is/EqTMR) and [Leaderboard Archive](https://archive.is/wrXZa) if Kaggle is down or the link is invalid.
+This is source code/solution for 4th place (top 1%) in Private LB with score 0.84923 of [[Student] Shopee Code League 2020 - Product Detection](https://www.kaggle.com/c/shopee-product-detection-student). Check [Overview Archive](https://archive.is/EqTMR) and [Leaderboard Archive](https://archive.is/wrXZa) if Kaggle is down or the link is invalid.
 
 ## Disclaimer
 
@@ -56,23 +56,24 @@ python3.8 -m pip install pandas matplotlib seaborn nltk pyenchant jellyfish scik
 | 05a_model.ipynb    | https://www.kaggle.com/ilosvigil/scl2020-2-5-model?scriptVersionId=37953296                | Kaggle TPU  | Create Multimodal Model. Some comment might not match code.                                             |
 | 05b_model.ipynb    | https://www.kaggle.com/ilosvigil/shopee-competition-2?scriptVersionId=38054791             | Kaggle TPU  | Create Multimodal Model                                                                                 |
 
-## Generated Dataset
+## Dataset
 
-Generated dataset from jupyter notebook is available on this repository and/or Kaggle datasets platform.
+The dataset is available on this repository and/or Kaggle datasets platform.
 
-| Notebook Filename  | Directory path                | Link to Kaggle datasets                                    |
-| ------------------ | ----------------------------- | ---------------------------------------------------------- |
-| 01a_ocr.ipynb      | `dataset/1_ocr_text`          | https://www.kaggle.com/ilosvigil/sc-21-ocr                 |
-| 01b_ocr.ipynb      | `dataset/1_ocr_text`          | https://www.kaggle.com/ilosvigil/sc-21-ocr                 |
-| 01c_ocr.ipynb      | `dataset/1_ocr_text`          | https://www.kaggle.com/ilosvigil/sc-21-ocr                 |
-| 01d_ocr.ipynb      | `dataset/1_ocr_text`          | https://www.kaggle.com/ilosvigil/sc-21-ocr                 |
-| 01e_ocr.ipynb      | `dataset/1_ocr_text`          | https://www.kaggle.com/ilosvigil/sc-21-ocr                 |
-| 02a_clean.ipynb    | `dataset/2_with_cleaned_text` | -                                                          |
-| 02b_clean.ipynb    | `dataset/2_with_cleaned_text` | -                                                          |
-| 03_tfidf.ipynb     | `dataset/3_with_tfidf`        | https://www.kaggle.com/ilosvigil/csv-with-cleaned-ocr-text |
-| 04a_tfrecord.ipynb | -                             | https://www.kaggle.com/ilosvigil/tfrecords                 |
-| 04b_tfrecord.ipynb | -                             | https://www.kaggle.com/ilosvigil/tfrecords-2               |
-| 04c_tfrecord.ipynb | -                             | https://www.kaggle.com/ilosvigil/tfrecords-3               |
+| Created by         | Directory path                | Link to Kaggle datasets                                                     |
+| ------------------ | ----------------------------- | --------------------------------------------------------------------------- |
+| Shopee             | `dataset/0_original_csv`      | https://www.kaggle.com/c/student-shopee-code-league-sentiment-analysis/data |
+| 01a_ocr.ipynb      | `dataset/1_ocr_text`          | https://www.kaggle.com/ilosvigil/sc-21-ocr                                  |
+| 01b_ocr.ipynb      | `dataset/1_ocr_text`          | https://www.kaggle.com/ilosvigil/sc-21-ocr                                  |
+| 01c_ocr.ipynb      | `dataset/1_ocr_text`          | https://www.kaggle.com/ilosvigil/sc-21-ocr                                  |
+| 01d_ocr.ipynb      | `dataset/1_ocr_text`          | https://www.kaggle.com/ilosvigil/sc-21-ocr                                  |
+| 01e_ocr.ipynb      | `dataset/1_ocr_text`          | https://www.kaggle.com/ilosvigil/sc-21-ocr                                  |
+| 02a_clean.ipynb    | `dataset/2_with_cleaned_text` | -                                                                           |
+| 02b_clean.ipynb    | `dataset/2_with_cleaned_text` | -                                                                           |
+| 03_tfidf.ipynb     | `dataset/3_with_tfidf`        | https://www.kaggle.com/ilosvigil/csv-with-cleaned-ocr-text                  |
+| 04a_tfrecord.ipynb | -                             | https://www.kaggle.com/ilosvigil/tfrecords                                  |
+| 04b_tfrecord.ipynb | -                             | https://www.kaggle.com/ilosvigil/tfrecords-2                                |
+| 04c_tfrecord.ipynb | -                             | https://www.kaggle.com/ilosvigil/tfrecords-3                                |
 
 ## LB/Leaderboard Score
 
